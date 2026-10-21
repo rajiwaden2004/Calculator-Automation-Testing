@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Calculator suite">  
+  <test  name="sin Test">
+    <classes>
+      <class name="testing.CalculatorAutomation.TriFun_sinTest"/>
+    </classes>   
+  </test> <!-- Test -->
+  
+   <test  name="Cos Test"> 
+     <classes>
+      <class name="testing.CalculatorAutomation.TriFun_cosTest"/>
+    </classes>
+   </test>
+   
+   <test  name="Tan Test"> 
+     <classes>
+      <class name="testing.CalculatorAutomation.TriFun_tanTest"/>
+    </classes>
+   </test>
+   
+   <test  name="log Test"> 
+     <classes>
+      <class name="testing.CalculatorAutomation.log_functionality"/>
+    </classes>
+   </test>
+   
+<!-- Test -->
+</suite> <!-- Suite -->

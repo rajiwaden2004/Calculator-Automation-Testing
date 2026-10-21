@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Calculator suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Tan Test(failed)">
+    <classes>
+      <class name="testing.CalculatorAutomation.TriFun_tanTest">
+        <methods>
+          <include name="tantest90"/>
+          <include name="testtan30"/>
+          <include name="tantest60"/>
+          <include name="testtan45"/>
+          <include name="launchwebsite"/>
+        </methods>
+      </class> <!-- testing.CalculatorAutomation.TriFun_tanTest -->
+    </classes>
+  </test> <!-- Tan Test(failed) -->
+</suite> <!-- Failed suite [Calculator suite] -->
