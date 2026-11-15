@@ -115,6 +115,54 @@ public class TriFun_cosTest {
 		   Thread.sleep(1000);  
 	   }
 	
+	@Test(priority=5)
+	//calculate the cos inverse
+	//cos inverse 0
+	public void cosinverse0() throws InterruptedException {
+		//click on cos inverse
+		driver.findElement(By.xpath("//span[@onclick=\"r('acos')\"]")).click();
+		//click on zero
+		driver.findElement(By.xpath("//span[@onclick='r(0)']")).click();
+		//click on "="
+		driver.findElement(By.xpath("//span[@onclick=\"r('=')\"]")).click();
+		//check the result
+		WebElement result = driver.findElement(By.id("sciOutPut"));
+		System.out.println("Calculator result:" +result.getText());
+		Thread.sleep(2000);
+	}
+	
+	@Test(priority=6)
+	//cos inverse of 1
+	public void cosinverse1() throws InterruptedException {
+		//click on cos inverse
+		driver.findElement(By.xpath("//span[@onclick=\"r('acos')\"]")).click();
+		//click on 1
+		driver.findElement(By.xpath("//span[@onclick=\"r(1)\"]")).click();
+		//click on "="
+		driver.findElement(By.xpath("//span[@onclick=\"r('=')\"]")).click();
+		//check the result
+		WebElement result = driver.findElement(By.id("sciOutPut"));
+		System.out.println("Calculator result:" +result.getText());
+		Thread.sleep(2000);	
+	}
+	@Test(priority=7)
+	//cos inverse 0.5
+	public void cosinverse05() throws InterruptedException {
+		//click on cos inverse
+		driver.findElement(By.xpath("//span[@onclick=\"r('acos')\"]")).click();
+		//click on zero
+		driver.findElement(By.xpath("//span[@onclick='r(0)']")).click();
+		//click on .
+		driver.findElement(By.xpath("//span[@onclick=\"r('.')\"]")).click();
+		//click on 5
+		driver.findElement(By.xpath("//span[@onclick='r(5)']")).click();
+		//click on "="
+		driver.findElement(By.xpath("//span[@onclick=\"r('=')\"]")).click();
+		WebElement result = driver.findElement(By.id("sciOutPut"));
+		System.out.println("Calculator result:" +result.getText());
+		Thread.sleep(2000);		
+	}
+
 	@AfterTest
 	public void closebrowser() {
 		if(driver != null) {

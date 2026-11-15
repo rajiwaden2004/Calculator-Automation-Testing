@@ -3,6 +3,7 @@ package testing.CalculatorAutomation;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -189,4 +190,13 @@ public class log_functionality {
 		//click on "Ac"
 		driver.findElement(By.xpath("//span[@onclick=\"r('C')\"]")).click();
 	}
+	@AfterTest
+	public void closebrowser() {
+		if(driver != null) {
+			driver.quit();
+		}
+		System.out.println("Browser is closed 4th time");
+		
+	}	
+
 }

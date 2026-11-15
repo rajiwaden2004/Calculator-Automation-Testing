@@ -25,5 +25,11 @@
     </classes>
    </test>
    
+   <test  name="e Test"> 
+     <classes>
+      <class name="testing.CalculatorAutomation.e_valuefunction"/>
+    </classes>
+   </test>
+   
 <!-- Test -->
 </suite> <!-- Suite -->

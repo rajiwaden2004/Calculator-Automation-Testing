@@ -107,6 +107,55 @@ public class TriFun_tanTest {
 		   System.out.println("Calculator results :" +results.getText());
 		   Thread.sleep(1000);  
 	   }
+	 
+	@Test(priority=5)
+	//calculate the tan inverse
+	//calculate the tan inverse of 0
+	public void taninverse0() throws InterruptedException {
+		//click on tan inverse
+		driver.findElement(By.xpath("//span[@onclick=\"r('atan')\"]")).click();
+		//click on zero
+		driver.findElement(By.xpath("//span[@onclick='r(0)']")).click();
+		//click on "="
+		driver.findElement(By.xpath("//span[@onclick=\"r('=')\"]")).click();   
+		//read the result
+		WebElement results = driver.findElement(By.id("sciOutPut"));
+		System.out.println("Calculator results :" +results.getText());
+		Thread.sleep(1000); 
+	}
+	@Test(priority=6)
+	//calculate the tan inverse of 1
+	public void taninverse1() throws InterruptedException {
+		//click on tan inverse
+		driver.findElement(By.xpath("//span[@onclick=\"r('atan')\"]")).click();
+		//click on 1
+		driver.findElement(By.xpath("//span[@onclick=\"r(1)\"]")).click();
+		//click on "="
+		driver.findElement(By.xpath("//span[@onclick=\"r('=')\"]")).click();
+		//read the result
+		WebElement results = driver.findElement(By.id("sciOutPut"));
+		System.out.println("Calculator results :" +results.getText());
+		Thread.sleep(1000); 
+	}
+	
+	@Test(priority=7)
+	//calculate the tan inverse of 0.5
+	public void taninverse05() throws InterruptedException {
+		//click on tan inverse
+		driver.findElement(By.xpath("//span[@onclick=\"r('atan')\"]")).click();
+		//click on zero
+		driver.findElement(By.xpath("//span[@onclick='r(0)']")).click();
+		//click on .
+		driver.findElement(By.xpath("//span[@onclick=\"r('.')\"]")).click();
+		//click on 5
+		driver.findElement(By.xpath("//span[@onclick='r(5)']")).click();
+		//click on "="
+		driver.findElement(By.xpath("//span[@onclick=\"r('=')\"]")).click();
+		//read the result
+		WebElement results = driver.findElement(By.id("sciOutPut"));
+		System.out.println("Calculator results :" +results.getText());
+		Thread.sleep(1000); 
+	}
 	
 	//close the browser
 	@AfterTest
@@ -114,7 +163,7 @@ public class TriFun_tanTest {
 		if(driver != null) {
 			driver.quit();
 		}
-		System.out.println("Browser is closed 2nd time");
+		System.out.println("Browser is closed 3rd time");
 		
 	}	
 }

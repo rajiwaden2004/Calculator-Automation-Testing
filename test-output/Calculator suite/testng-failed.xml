@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Calculator suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="sin Test(failed)">
+    <classes>
+      <class name="testing.CalculatorAutomation.TriFun_sinTest">
+        <methods>
+          <include name="testSin30"/>
+          <include name="sintest60"/>
+          <include name="closebrowser"/>
+          <include name="testsin45"/>
+          <include name="launch"/>
+          <include name="testsininverse0"/>
+          <include name="sintest90"/>
+        </methods>
+      </class> <!-- testing.CalculatorAutomation.TriFun_sinTest -->
+    </classes>
+  </test> <!-- sin Test(failed) -->
+  <test thread-count="5" name="Cos Test(failed)">
+    <classes>
+      <class name="testing.CalculatorAutomation.TriFun_cosTest">
+        <methods>
+          <include name="closebrowser"/>
+          <include name="testcos45"/>
+          <include name="costest60"/>
+          <include name="costest90"/>
+          <include name="testcos30"/>
+          <include name="launchbrowser"/>
+        </methods>
+      </class> <!-- testing.CalculatorAutomation.TriFun_cosTest -->
+    </classes>
+  </test> <!-- Cos Test(failed) -->
   <test thread-count="5" name="Tan Test(failed)">
     <classes>
       <class name="testing.CalculatorAutomation.TriFun_tanTest">
@@ -9,9 +38,29 @@
           <include name="testtan30"/>
           <include name="tantest60"/>
           <include name="testtan45"/>
+          <include name="closebrowser"/>
           <include name="launchwebsite"/>
         </methods>
       </class> <!-- testing.CalculatorAutomation.TriFun_tanTest -->
     </classes>
   </test> <!-- Tan Test(failed) -->
+  <test thread-count="5" name="log Test(failed)">
+    <classes>
+      <class name="testing.CalculatorAutomation.log_functionality">
+        <methods>
+          <include name="logTest6"/>
+          <include name="logTest9"/>
+          <include name="logTest8"/>
+          <include name="launchwebsite"/>
+          <include name="logTest1"/>
+          <include name="logTest10"/>
+          <include name="logTest3"/>
+          <include name="logTest2"/>
+          <include name="logTest5"/>
+          <include name="logTest4"/>
+          <include name="logTest7"/>
+        </methods>
+      </class> <!-- testing.CalculatorAutomation.log_functionality -->
+    </classes>
+  </test> <!-- log Test(failed) -->
 </suite> <!-- Failed suite [Calculator suite] -->

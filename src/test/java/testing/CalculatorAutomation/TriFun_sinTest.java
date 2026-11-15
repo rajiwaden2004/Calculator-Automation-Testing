@@ -50,12 +50,11 @@ public class TriFun_sinTest {
 		//read the result
 		WebElement result = driver.findElement(By.id("sciOutPut"));
 		System.out.println("Calculator result :"+result.getText());
-		Thread.sleep(2000);
+		Thread.sleep(3000);		
 	}
 	
 		
-	
-	
+
 	@Test(priority=2)
 	public void testsin45() throws InterruptedException {
 		//click on sin
@@ -117,6 +116,59 @@ public class TriFun_sinTest {
 	   System.out.println("Calculator results :" +results.getText());
 	   Thread.sleep(1000);  
    }
+	
+	@Test(priority=5)
+	//sin inverse properties
+	//sin inverse of 0
+	public void testsininverse0() throws InterruptedException {
+		//click on sininverse
+		driver.findElement(By.xpath("//span[@onclick=\"r('asin')\"]")).click();
+		//click on zero
+		driver.findElement(By.xpath("//span[@onclick='r(0)']")).click();
+		//click on "="
+		driver.findElement(By.xpath("//span[@onclick=\"r('=')\"]")).click();
+		//read the result
+		WebElement resu = driver.findElement(By.id("sciOutPut"));
+		System.out.println("Calculator resu :"+resu.getText());
+		Thread.sleep(2000);
+	}
+	
+	@Test(priority=6)
+	//sin inverse of 1
+	public void testsininverse1() throws InterruptedException {
+		//click on sininverse
+		driver.findElement(By.xpath("//span[@onclick=\"r('asin')\"]")).click();
+		//clcik on 1
+		driver.findElement(By.xpath("//span[@onclick=\"r(1)\"]")).click();
+		//click on "="
+		driver.findElement(By.xpath("//span[@onclick=\"r('=')\"]")).click();
+		//read the result
+		WebElement res = driver.findElement(By.id("sciOutPut"));
+		System.out.println("Calculator res:" +res.getText());
+		Thread.sleep(2000);
+	}
+	
+	@Test(priority=7)
+	public void sininverse05() throws InterruptedException{
+		//click on sininverse
+		driver.findElement(By.xpath("//span[@onclick=\"r('asin')\"]")).click();
+		//click on zero
+		driver.findElement(By.xpath("//span[@onclick='r(0)']")).click();
+		//click on .
+		driver.findElement(By.xpath("//span[@onclick=\"r('.')\"]")).click();
+		//click on 5
+		driver.findElement(By.xpath("//span[@onclick='r(5)']")).click();
+		//click on "="
+		driver.findElement(By.xpath("//span[@onclick=\"r('=')\"]")).click();
+		//read the result
+		WebElement res = driver.findElement(By.id("sciOutPut"));
+		System.out.println("Calculator res:" +res.getText());
+		Thread.sleep(2000);	
+	}
+	
+
+			
+			
    
 	@AfterTest
 	public void closebrowser() {

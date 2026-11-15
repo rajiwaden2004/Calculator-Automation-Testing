@@ -3,12 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testing.CalculatorAutomation.log_functionality">
+      <class name="testing.CalculatorAutomation.function_10x">
         <methods>
-          <include name="launchwebsite"/>
-          <include name="logTest0"/>
+          <include name="launchWebsite"/>
+          <include name="test10_min2"/>
+          <include name="test10_3"/>
+          <include name="test10_05"/>
+          <include name="test10_2"/>
+          <include name="test10_5"/>
+          <include name="test10_4"/>
+          <include name="test10_min1"/>
         </methods>
-      </class> <!-- testing.CalculatorAutomation.log_functionality -->
+      </class> <!-- testing.CalculatorAutomation.function_10x -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
