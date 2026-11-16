@@ -29,7 +29,14 @@
      <classes>
       <class name="testing.CalculatorAutomation.e_valuefunction"/>
     </classes>
+   </test>  
+   
+   <test  name="Squareroot Test"> 
+     <classes>
+      <class name="testing.CalculatorAutomation.SquareRoot"/>
+    </classes>
    </test>
+   
    
 <!-- Test -->
 </suite> <!-- Suite -->

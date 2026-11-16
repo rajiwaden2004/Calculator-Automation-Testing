@@ -3,18 +3,21 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testing.CalculatorAutomation.function_10x">
+      <class name="testing.CalculatorAutomation.SquareRoot">
         <methods>
+          <include name="sqrt5"/>
+          <include name="sqrt2"/>
+          <include name="sqrt7"/>
+          <include name="sqrt4"/>
+          <include name="closebrowser"/>
+          <include name="sqrt1"/>
+          <include name="sqrt3"/>
           <include name="launchWebsite"/>
-          <include name="test10_min2"/>
-          <include name="test10_3"/>
-          <include name="test10_05"/>
-          <include name="test10_2"/>
-          <include name="test10_5"/>
-          <include name="test10_4"/>
-          <include name="test10_min1"/>
+          <include name="sqrt9"/>
+          <include name="sqrt6"/>
+          <include name="sqrt8"/>
         </methods>
-      </class> <!-- testing.CalculatorAutomation.function_10x -->
+      </class> <!-- testing.CalculatorAutomation.SquareRoot -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
