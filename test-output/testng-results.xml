@@ -1,57 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-11-16T20:24:07 IST" name="Default suite" finished-at="2026-11-16T20:24:33 IST" duration-ms="26008">
+  <suite started-at="2026-11-16T20:38:37 IST" name="Default suite" finished-at="2026-11-16T20:50:22 IST" duration-ms="705406">
     <groups>
     </groups>
-    <test started-at="2026-11-16T20:24:07 IST" name="Default test" finished-at="2026-11-16T20:24:33 IST" duration-ms="26008">
-      <class name="testing.CalculatorAutomation.SquareRoot">
-        <test-method is-config="true" signature="launchWebsite()[pri:0, instance:testing.CalculatorAutomation.SquareRoot@4c402120]" started-at="2026-11-16T20:24:07 IST" name="launchWebsite" finished-at="2026-11-16T20:24:27 IST" duration-ms="19915" status="PASS">
+    <test started-at="2026-11-16T20:38:37 IST" name="Default test" finished-at="2026-11-16T20:50:22 IST" duration-ms="705406">
+      <class name="testing.CalculatorAutomation.links_click">
+        <test-method is-config="true" signature="launch_website()[pri:0, instance:testing.CalculatorAutomation.links_click@54d9d12d]" started-at="2026-11-16T20:38:37 IST" name="launch_website" finished-at="2026-11-16T20:39:30 IST" duration-ms="53013" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchWebsite -->
-        <test-method signature="sqrt1()[pri:1, instance:testing.CalculatorAutomation.SquareRoot@4c402120]" started-at="2026-11-16T20:24:27 IST" name="sqrt1" finished-at="2026-11-16T20:24:28 IST" duration-ms="665" status="PASS">
+        </test-method> <!-- launch_website -->
+        <test-method signature="click_allLinks()[pri:0, instance:testing.CalculatorAutomation.links_click@54d9d12d]" started-at="2026-11-16T20:39:30 IST" name="click_allLinks" finished-at="2026-11-16T20:50:22 IST" duration-ms="652235" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sqrt1 -->
-        <test-method signature="sqrt2()[pri:2, instance:testing.CalculatorAutomation.SquareRoot@4c402120]" started-at="2026-11-16T20:24:28 IST" name="sqrt2" finished-at="2026-11-16T20:24:29 IST" duration-ms="638" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sqrt2 -->
-        <test-method signature="sqrt3()[pri:3, instance:testing.CalculatorAutomation.SquareRoot@4c402120]" started-at="2026-11-16T20:24:29 IST" name="sqrt3" finished-at="2026-11-16T20:24:29 IST" duration-ms="369" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sqrt3 -->
-        <test-method signature="sqrt4()[pri:4, instance:testing.CalculatorAutomation.SquareRoot@4c402120]" started-at="2026-11-16T20:24:29 IST" name="sqrt4" finished-at="2026-11-16T20:24:29 IST" duration-ms="394" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sqrt4 -->
-        <test-method signature="sqrt5()[pri:5, instance:testing.CalculatorAutomation.SquareRoot@4c402120]" started-at="2026-11-16T20:24:29 IST" name="sqrt5" finished-at="2026-11-16T20:24:30 IST" duration-ms="560" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sqrt5 -->
-        <test-method signature="sqrt6()[pri:6, instance:testing.CalculatorAutomation.SquareRoot@4c402120]" started-at="2026-11-16T20:24:30 IST" name="sqrt6" finished-at="2026-11-16T20:24:31 IST" duration-ms="740" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sqrt6 -->
-        <test-method signature="sqrt7()[pri:7, instance:testing.CalculatorAutomation.SquareRoot@4c402120]" started-at="2026-11-16T20:24:31 IST" name="sqrt7" finished-at="2026-11-16T20:24:32 IST" duration-ms="719" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sqrt7 -->
-        <test-method signature="sqrt8()[pri:8, instance:testing.CalculatorAutomation.SquareRoot@4c402120]" started-at="2026-11-16T20:24:32 IST" name="sqrt8" finished-at="2026-11-16T20:24:32 IST" duration-ms="737" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sqrt8 -->
-        <test-method signature="sqrt9()[pri:9, instance:testing.CalculatorAutomation.SquareRoot@4c402120]" started-at="2026-11-16T20:24:32 IST" name="sqrt9" finished-at="2026-11-16T20:24:33 IST" duration-ms="741" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sqrt9 -->
-        <test-method is-config="true" signature="closebrowser()[pri:0, instance:testing.CalculatorAutomation.SquareRoot@4c402120]" started-at="2026-11-16T20:24:33 IST" name="closebrowser" finished-at="2026-11-16T20:24:33 IST" duration-ms="393" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closebrowser -->
-      </class> <!-- testing.CalculatorAutomation.SquareRoot -->
+        </test-method> <!-- click_allLinks -->
+      </class> <!-- testing.CalculatorAutomation.links_click -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
